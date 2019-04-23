@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-toolbar color='tertiary'>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Add
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding>
+        
+      <ion-item>
+      <ion-label position="floating">Name: </ion-label>
+        <ion-input placeholder="Name" [(ngModel)]="movie.name"></ion-input>
+      </ion-item>
+      <ion-item>
+      <ion-label position="floating">Year: </ion-label>
+        <ion-input placeholder="Year" [(ngModel)]="movie.year"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label position="floating">Url: </ion-label>
+            <ion-input placeholder="Image_Url" [(ngModel)]="movie.image_url"></ion-input>
+          </ion-item>
+      <ion-item>
+      <ion-label position="floating">Production: </ion-label>
+        <ion-input placeholder="Production" [(ngModel)]="movie.production_house"></ion-input>
+      </ion-item>
+      <ion-item>
+      <ion-label position="floating">Rating: </ion-label>
+        <ion-input placeholder="Rating" [(ngModel)]="movie.rating"></ion-input>
+      </ion-item>	
+      <ion-item>
+          <ion-label position="floating">Type: </ion-label>
+            <ion-input placeholder="Type" [(ngModel)]="movie.type"></ion-input>
+          </ion-item>		
+          <ion-item>
+              <ion-label position="floating">Language: </ion-label>
+                <ion-input placeholder="Language" [(ngModel)]="movie.language"></ion-input>
+              </ion-item>	
+              <ion-item>
+                  <ion-label position="floating">Date: </ion-label>
+                    <ion-input placeholder="Date of Release" [(ngModel)]="movie.date"></ion-input>
+              </ion-item>	
+              <ion-item>
+                <ion-label position="floating">Likes: </ion-label>
+                  <ion-input placeholder="Likes" [(ngModel)]="movie.likes"></ion-input>
+            </ion-item>	
+      <ion-button shape="round" expand="full" (click)="addMovie(movie)"><b>Add</b></ion-button>
+    </ion-content>
+  
